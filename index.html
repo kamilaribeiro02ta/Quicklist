@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
-    />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <title>quicklist - kamilla</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -28,49 +25,65 @@
         <button>
             <i class="ph ph-arrow-left"></i>
             voltar
-         </button>
+        </button>
 
-         <h1>compras da semana</h1>
+        <h1>compras da semana</h1>
     </header>
-<main>
-  <section class="add-item">
- <input type="text" placeholder=" adcione um novo item" id="item">
- <button> adicionar item</button>
-  </section>
+    <main>
+        <section class="add-item">
+            <input type="text" placeholder=" adcione um novo item" id="item">
+            <button> adicionar item</button>
+        </section>
 
-  <section class="list">
+        <section class="list">
+            <div class="item">  
+                <div>
+                    <input type="checkbox" name="list" id="item-1">
+                    <div class="custom-checkbox">
+                        <img src="./assets/checked.svg" alt="checked">
+                    </div>
+                    <label for="item-1">pão de forma</label>
+                </div>
+                <button>
+                    <img src="./assets/trash-icon.svg" alt="trash icon">
+                </button>
+            </div>
+            <div class="item">  
+                <div>
+                    <input type="checkbox" name="list" id="item-1">
+                    <div class="custom-checkbox">
+                        <img src="./assets/checked.svg" alt="checked">
+                    </div>
+                    <label for="item-2">café</label>
+                </div>
+                <button>
+                    <img src="./assets/trash-icon.svg" alt="trash icon">
+                </button>
+            </div>
+            <div class="item">  
+                <div>
+                    <input type="checkbox" name="list" id="item-1">
+                    <div class="custom-checkbox">
+                        <img src="./assets/checked.svg" alt="checked">
+                    </div>
+                    <label for="item-3">leite</label>
+                </div>
+                <button>
+                    <img src="./assets/trash-icon.svg" alt="trash icon">
+                </button>
+            </div>
+        </section>
 
- <div class="item">
- <input type="checkbox" name="list" id="item-1">
- <div class="custom-checkbox">
-    <img src="./assets/checked.svg" alt="checked">
-
-    <label for="item-1">pão de forma</label>
-
-    <div class="item">
-        <input type="checkbox" name="list" id="item-1">
-        <div class="custom-checkbox">
-           <img src="./assets/checked.svg" alt="checked">
-       
-           <label for="item-2">café</label>
- </div>
- <button>
-    <img src="./assets/trash-icon.svg" alt="trash icon">
- </button>
- </div>
-
-
-  </section>
-
-  <div class="warning">
-<div>
-  <i class="ph ph-warning-circle ph-fill"></i>
-  <span> o item foi removido da lista</span>
-</div>
-    <button>
-      <i class="ph ph-x"></i>
-    </button>
-  </div>
+        <div class="warning">
+            <div>
+                <i class="ph ph-warning-circle ph-fill"></i>
+                <span> o item foi removido da lista</span>
+            </div>
+            <button>
+                <i class="ph ph-x"></i>
+            </button>
+        </div>
     </main>
 </body>
+
 </html>
