@@ -68,7 +68,7 @@ function checkItem(itemName) {
 
 function removeItem(itemName) {
     const intemIndex = items.findIndex((item) => item.name === itemName)
-    
+
      const divWarning = document.querySelector(".warning")
 
      divWarning.classList.remove("hide-warning")
@@ -82,5 +82,6 @@ function removeItem(itemName) {
     }
     
     showItemsList()
+
 
 }
