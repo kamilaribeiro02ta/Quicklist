@@ -32,6 +32,7 @@ function showItemsList() {
         
             <div class="item">  
                 <div>
+<<<<<<< HEAD
                     <input type="checkbox" name="list" id="item-${index}">
                     <div class="custom-checkbox">
 
@@ -43,6 +44,14 @@ function showItemsList() {
                     <label for="item-${index}">${item.name}</label>
                 </div>
                   <button onclick= "removeItem('${item.name}')">
+=======
+                    <input type="checkbox" name="list" id="item-${index}" ${item.checked === true ? "checked" : ""}
+                    <div class="custom-checkbox">
+                        <img src="./assets/checked.svg" alt="checked">
+                    </div>
+                    <label for="item-${index}" onclick="checkItem('${item.name}')">${item.name}</label>
+                </div>
+                <button>
                     
                     <img src="./assets/trash-icon.svg" alt="trash icon">
                 </button>
@@ -66,4 +75,5 @@ function removeItem(itemName) {
     }
     
     showItemsList()
+
 }
